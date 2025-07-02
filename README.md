@@ -13,7 +13,7 @@ Aquí podrás encontrar enlaces a cada uno de mis juegos, capturas de pantalla, 
 
 Este repositorio también está publicado como página web en GitHub Pages:
 
-👉 [pisugames.github.io](https://pisugames.github.io)
+👉 [pisugames.github.io/PiSuGames/](https://pisugames.github.io/PiSuGames/)
 
 Visita la web para una experiencia más visual y ordenada.
 
