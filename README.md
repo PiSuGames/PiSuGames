@@ -1,3 +1,4 @@
+![logo-pisugames-mini](https://github.com/user-attachments/assets/30e2ee53-06aa-4592-abe5-cb9456e05efe)
 # PiSuGames - Portfolio de Videojuegos
 
 Bienvenido a PiSuGames, mi portfolio personal donde reúno todos mis proyectos de videojuegos, incluyendo fan games y juegos originales desarrollados en Unity y C#.
