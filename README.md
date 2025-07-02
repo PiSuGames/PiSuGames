@@ -7,7 +7,7 @@ Aquí podrás encontrar enlaces a cada uno de mis juegos, capturas de pantalla, 
 ## Juegos destacados
 
 - [DigiChess](https://github.com/jesusburrueco/DigiChess) – Autochess fan game inspirado en Digimon.
-
+- [D-Tector](https://github.com/PiSuGames/DTector24) - Remake Digivice D-Tector para Android.
 
 ## Cómo usar este repositorio
 
