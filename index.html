@@ -105,15 +105,47 @@
         height: 120px;
       }
     }
+
+    .language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  z-index: 999;
+}
+
+.language-switcher button {
+  background-color: #1db954;
+  color: #121212;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.language-switcher button:hover {
+  background-color: #17a64d;
+  transform: scale(1.05);
+}
+
+.language-switcher button.active {
+  background-color: #0f7034;
+}
   </style>
 </head>
 <body>
-  <div style="position: fixed; top: 20px; right: 20px; z-index: 999;">
-  <select id="languageSwitcher">
-    <option value="es">Español</option>
-    <option value="en">English</option>
-  </select>
-</div>
+  <div class="language-switcher">
+    <button onclick="switchLanguage('es')" id="btn-es">
+      🇪🇸 ES
+    </button>
+    <button onclick="switchLanguage('en')" id="btn-en">
+      🇬🇧 EN
+    </button>
+  </div>
   <h1>PiSuGames - Portfolio de Videojuegos</h1>
   <p class="description">
     Bienvenido a mi portfolio personal, donde reúno mis proyectos de videojuegos, incluyendo fan games y proyectos originales desarrollados en Unity y C#.
@@ -182,9 +214,7 @@
     }
   };
 
-  const switcher = document.getElementById('languageSwitcher');
-  switcher.addEventListener('change', () => {
-    const lang = switcher.value;
+  function switchLanguage(lang) {
     document.title = texts[lang].title;
     document.querySelector('h1').textContent = texts[lang].title;
     document.querySelector('.description').textContent = texts[lang].description;
@@ -192,7 +222,14 @@
     document.querySelectorAll('.card-desc')[1].textContent = texts[lang].dtectorDesc;
     document.querySelectorAll('.card-desc')[2].textContent = texts[lang].coming;
     document.querySelector('footer').textContent = texts[lang].footer;
-  });
+
+    document.getElementById('btn-es').classList.remove('active');
+    document.getElementById('btn-en').classList.remove('active');
+    document.getElementById(`btn-${lang}`).classList.add('active');
+  }
+
+  // Inicializa en español por defecto
+  switchLanguage('es');
 </script>
 </body>
 </html>
