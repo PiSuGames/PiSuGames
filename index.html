@@ -108,6 +108,12 @@
   </style>
 </head>
 <body>
+  <div style="position: fixed; top: 20px; right: 20px; z-index: 999;">
+  <select id="languageSwitcher">
+    <option value="es">Español</option>
+    <option value="en">English</option>
+  </select>
+</div>
   <h1>PiSuGames - Portfolio de Videojuegos</h1>
   <p class="description">
     Bienvenido a mi portfolio personal, donde reúno mis proyectos de videojuegos, incluyendo fan games y proyectos originales desarrollados en Unity y C#.
@@ -156,6 +162,38 @@
   <footer>
     © 2025 Jesús Burrueco – Proyecto sin fines comerciales. Todo pertenece a sus respectivos dueños.
   </footer>
+  <script>
+  const texts = {
+    es: {
+      title: "PiSuGames - Portfolio de Videojuegos",
+      description: "Bienvenido a mi portfolio personal, donde reúno mis proyectos de videojuegos, incluyendo fan games y proyectos originales desarrollados en Unity y C#.",
+      digichessDesc: "Autochess con estética Digimon. Compra fichas, mejóralas, digievoluciona y domina el Coliseo Digimon.",
+      dtectorDesc: "Remake fan del Digivice de Digimon Frontier (Android)",
+      coming: "PRÓXIMAMENTE...",
+      footer: "© 2025 Jesús Burrueco – Proyecto sin fines comerciales. Todo pertenece a sus respectivos dueños."
+    },
+    en: {
+      title: "PiSuGames - Videogame Portfolio",
+      description: "Welcome to my personal portfolio, whre I share all my videogame projects including fan games and original games developed in Unity and C#.",
+      digichessDesc: "Autochess with Digimon style. Buy units, upgrade them, digivolve, and conquer the Digimon Coliseum.",
+      dtectorDesc: "Fan remake of the Digivice from Digimon Frontier (Android only)",
+      coming: "COMING SOON...",
+      footer: "© 2025 Jesús Burrueco – Non-profit project. All rights belong to their respective owners."
+    }
+  };
+
+  const switcher = document.getElementById('languageSwitcher');
+  switcher.addEventListener('change', () => {
+    const lang = switcher.value;
+    document.title = texts[lang].title;
+    document.querySelector('h1').textContent = texts[lang].title;
+    document.querySelector('.description').textContent = texts[lang].description;
+    document.querySelectorAll('.card-desc')[0].textContent = texts[lang].digichessDesc;
+    document.querySelectorAll('.card-desc')[1].textContent = texts[lang].dtectorDesc;
+    document.querySelectorAll('.card-desc')[2].textContent = texts[lang].coming;
+    document.querySelector('footer').textContent = texts[lang].footer;
+  });
+</script>
 </body>
 </html>
 
