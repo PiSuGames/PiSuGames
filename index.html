@@ -155,6 +155,8 @@
     Bienvenido a mi portfolio personal, donde reúno mis proyectos de videojuegos, incluyendo fan games y proyectos originales desarrollados en Unity y C#.
   </p>
 
+
+  <h2>Unity</h2>
   <div class="cards">
     <div class="card">
       <img src="https://github.com/PiSuGames/DigiChess/blob/main/LogoDigichess%202.png?raw=true" alt="DigiChess Screenshot" />
@@ -190,11 +192,43 @@
           </p>
         </div>
       </div>
-
-    <!-- Más tarjetas de juegos aquí -->
-    
   </div>
-
+  
+  <h2>Random</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://github.com/PiSuGames/PiSuGames/blob/main/logoakinator.png?raw=true" alt="Akinator4Everyone" />
+      <div class="card-content">
+        <h2 class="card-title">Akinator 4 Everyone</h2>
+        <p class="card-desc">
+          Sistema Akinator para que cualquier usuario pueda hacer su propio juego con los personajes que quiera.
+        </p>
+        <div class="card-links">
+          <a class="github-link" href="https://github.com/jesusburrueco/Akinator-easy" target="_blank" rel="noopener noreferrer">Código en GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://github.com/PiSuGames/PiSuGames/blob/main/logoinstaguesser.png?raw=true" alt="Instaguesser" />
+      <div class="card-content">
+        <h2 class="card-title">InstaGuesser</h2>
+        <p class="card-desc">
+          Party game usando Instagram.
+        </p>
+        <div class="card-links">
+          <a class="github-link" href="https://github.com/jesusburrueco/instaguesser" target="_blank" rel="noopener noreferrer">Código en GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">BalthaUI</h2>
+          <p class="card-desc">
+            COMING SOON...
+          </p>
+        </div>
+      </div>
+  </div>
   <footer>
     © 2025 Jesús Burrueco – Proyecto sin fines comerciales. Todo pertenece a sus respectivos dueños.
   </footer>
@@ -205,6 +239,8 @@
       description: "Bienvenido a mi portfolio personal, donde reúno mis proyectos de videojuegos, incluyendo fan games y proyectos originales desarrollados en Unity y C#.",
       digichessDesc: "Autochess con estética Digimon. Compra fichas, mejóralas, digievoluciona y domina el Coliseo Digimon.",
       dtectorDesc: "Remake fan del Digivice de Digimon Frontier (Android)",
+      akinatorDesc: "Sistema Akinator para que cualquier usuario pueda hacer su propio juego con los personajes que quiera.",
+      instaDesc: "Party game usando Instagram.",
       coming: "PRÓXIMAMENTE...",
       github: "Código en Github",
       footer: "© 2025 Jesús Burrueco – Proyecto sin fines comerciales. Todo pertenece a sus respectivos dueños."
@@ -214,6 +250,8 @@
       description: "Welcome to my personal portfolio, whre I share all my videogame projects including fan games and original games developed in Unity and C#.",
       digichessDesc: "Autochess with Digimon style. Buy units, upgrade them, digivolve, and conquer the Digimon Coliseum.",
       dtectorDesc: "Fan remake of the Digivice from Digimon Frontier (Android only)",
+      akinatorDesc: "Akinator system free use for everyone.",
+      instaDesc: "Instagram Party Game.",
       coming: "COMING SOON...",
       github: "Github Page",
       footer: "© 2025 Jesús Burrueco – Non-profit project. All rights belong to their respective owners."
@@ -227,6 +265,8 @@
     document.querySelectorAll('.card-desc')[0].textContent = texts[lang].digichessDesc;
     document.querySelectorAll('.card-desc')[1].textContent = texts[lang].dtectorDesc;
     document.querySelectorAll('.card-desc')[2].textContent = texts[lang].coming;
+    document.querySelectorAll('.card-desc')[3].textContent = texts[lang].akinatorDesc;
+    document.querySelectorAll('.card-desc')[4].textContent = texts[lang].instaDesc;
     document.querySelectorAll('.github-link').textContent = texts[lang].github;
     document.querySelector('footer').textContent = texts[lang].footer;
 
