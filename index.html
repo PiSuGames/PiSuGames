@@ -164,7 +164,7 @@
           Autochess con estética Digimon. Compra fichas, mejóralas, digievoluciona y domina el Coliseo Digimon.
         </p>
         <div class="card-links">
-          <a href="https://github.com/PiSuGames/DigiChess" target="_blank" rel="noopener noreferrer">Código en GitHub</a>
+          <a class="github-link" href="https://github.com/PiSuGames/DigiChess" target="_blank" rel="noopener noreferrer">Código en GitHub</a>
           <a style="margin-top: 15px;" href="https://www.youtube.com/watch?v=oqytJRO8nlg&ab_channel=RobotHead" target="_blank" rel="noopener noreferrer">Video Gameplay</a>
         </div>
       </div>
@@ -177,7 +177,7 @@
           Remake fan del Digivice de Digimon Frontier (Android)
         </p>
         <div class="card-links">
-          <a href="https://github.com/PiSuGames/DTector24" target="_blank" rel="noopener noreferrer">Código en GitHub</a>
+          <a class="github-link" href="https://github.com/PiSuGames/DTector24" target="_blank" rel="noopener noreferrer">Código en GitHub</a>
           <a style="margin-top: 15px;" href="https://www.youtube.com/watch?v=YW_4daBr2tU&ab_channel=RobotHead" target="_blank" rel="noopener noreferrer">Video Gameplay</a>
         </div>
       </div>
@@ -206,6 +206,7 @@
       digichessDesc: "Autochess con estética Digimon. Compra fichas, mejóralas, digievoluciona y domina el Coliseo Digimon.",
       dtectorDesc: "Remake fan del Digivice de Digimon Frontier (Android)",
       coming: "PRÓXIMAMENTE...",
+      github: "Código en Github",
       footer: "© 2025 Jesús Burrueco – Proyecto sin fines comerciales. Todo pertenece a sus respectivos dueños."
     },
     en: {
@@ -214,6 +215,7 @@
       digichessDesc: "Autochess with Digimon style. Buy units, upgrade them, digivolve, and conquer the Digimon Coliseum.",
       dtectorDesc: "Fan remake of the Digivice from Digimon Frontier (Android only)",
       coming: "COMING SOON...",
+      github: "Github Page",
       footer: "© 2025 Jesús Burrueco – Non-profit project. All rights belong to their respective owners."
     }
   };
@@ -225,6 +227,7 @@
     document.querySelectorAll('.card-desc')[0].textContent = texts[lang].digichessDesc;
     document.querySelectorAll('.card-desc')[1].textContent = texts[lang].dtectorDesc;
     document.querySelectorAll('.card-desc')[2].textContent = texts[lang].coming;
+    document.querySelectorAll('.github-link').textContent = texts[lang].github;
     document.querySelector('footer').textContent = texts[lang].footer;
 
     document.getElementById('btn-es').classList.remove('active');
